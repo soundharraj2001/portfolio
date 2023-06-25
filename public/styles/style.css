@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@0,400;1,400;1,700&family=Oswald:wght@300;600&family=Roboto&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+   position: relative;
+   width: 100vw;
+}
+.navbar-components {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+}
+.navbar-components .head{
+    position: absolute;
+    display: block;
+    /* background-color: #000; */
+    margin-right: 1000px;
+}
+.navbar-components p{
+    font-size: 20px;
+}
+.navbar-components a{
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+    color: #000;
+    position: sticky;
+}
+
+/* MEDIA QUERY FOR NAVBAR COMPONENTS */
+@media screen and (max-width : 480px) {
+    .navbar-components{
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .navbar-components a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; 
+    }
+    .navbar-components a:hover{
+        background-color: orange;
+    }
+}
+
+/* HOME CONTAINER STYLE */
+.home-container{
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.home-container .home-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 250px;
+}
+.home-container .home-card .role{
+    font-size: 60px;
+    line-height: 50px;
+    margin-top: 100px;
+}
+.home-container .home-card .yourself{
+    font-size: 20px;
+    padding: 25px 0 0 100px;
+}
+.home-container .home-card  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 170px;
+}
+.home-container .home-card .links .github-link, .linkedin-link{
+    font-size: 20px;
+    margin: 4px;
+}
+.home-container .tech{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.home-container .tech h3{
+    margin: 18px 25px 0 2px;
+}
+
+.home-container .tech .logo{
+    border-radius: 25px;
+    width: 50px;
+    padding: 10px;
+    height:49px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.home-container .tech .js img{
+    border-radius: 25px;
+    width: 50px;
+    height: 49px;
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+
+/* SKILL CONTAINER STYLE */
+#about-container{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#about-container .role-name{
+    display: flex;
+    margin-top: 16px;
+}
+#about-container .role-name img{
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    border-radius: 15px;
+    margin-left: -520px;
+}
+#about-container .content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    width: 450px;
+    word-spacing: 4px;
+    font-size: large;
+    margin-top: 80px;
+}
+#about-container .role-name h1{
+    margin-left: 300px;
+    margin-top: -100px;
+    padding: 10px;
+}
+#about-container .role-name h2{
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#about-container .home-card .tech-stacks .html{
+    display: flex;
+    width: 40px;
+    background-color: #000;
+}
+
+
+/* ABOUT SECTION STYLE  */
+#about-container{
+    height: 100vh;
+    /* background-color: #D6A4A4; */
+}
+
+
+
+
+
+
+
+
+
+/* STYLE FOR PROJECTS */
+
+#project-container{
+    height: 350vh;
+}
+#project-container h3{
+    display: flex;
+    margin-top: 75px;
+    padding: 10px;
+    margin-left: 400px;
+    font-size: x-large;
+}
+#project-container h4{
+    margin-top: 20px;
+    margin-left: 500px;
+    color: blue;
+}
+#project-container .project-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#project-container .project-cards .project1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 120px;
+    margin-left: 250px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#project-container .project-cards .project1 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#project-container .project-cards .project1 .zoom-in{
+    transition: transform 0.3s ease;
+}
+#project-container .project-cards .project1 .zoom-in:hover{
+    transform: scale(1.1);
+}
+#project-container .project-cards .food-content{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    align-items: flex-end;
+    margin-left: 750px;
+    margin-top: 120px;
+    word-spacing: 4px;
+    font-size: large;
+}
+#project-container .project-cards .food-content .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+#project-container .project-cards .food-content .visit {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#project-container .project-cards .food-content .visit a{
+    position: absolute;
+    margin-right: 320px;
+    margin-top: 20px;
+    padding: 13px;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    height: 48px;
+    width: 90px;
+}
+
+#project-container .project-cards .food-content .visit  .github{
+    margin-left: -160px;
+}
+
+#project-container .project-cards .food-content .visit .github:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+#project-container .project-cards .food-content .visit .live-demo{
+    padding: 13px;
+    margin-right: 150px;
+    height:49px;
+    width: 130px;
+}
+
+#project-container .project-cards .food-content .visit .live-demo:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+#project-container .project-cards .project2{
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 750px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: gray;
+}
+#project-container .project-cards .project2 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#project-container .project-cards .project2 .zoom-in{
+    transition: transform 0.3s ease;
+}
+#project-container .project-cards .project2 .zoom-in:hover{
+    transform: scale(1.1);
+}
+
+#project-container .project-cards .project2 .gym-content{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 250px;
+}
+
+#project-container .project-cards .gym-content p{
+    display: flex;
+    width: 350px;
+    align-items: flex-start;
+    margin-top: -200px;
+    margin-left: 210px;
+    word-spacing: 4px;
+    font-size: larger;
+}
+
+#project-container .gym-content .visit-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 650px;
+    padding: 20px;
+}
+#project-container .gym-content .visit-project .github2{
+    margin-left: -50px;
+}
+
+#project-container .gym-content .visit-project .github2:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+#project-container .gym-content .visit-project a{
+    position: absolute;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 16px;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    height: 48px;
+    width: 90px;
+}
+
+#project-container .gym-content .visit-project .live-demo2{
+    padding: 17px;
+    width: 125px;
+    margin-left: 280px;
+}
+#project-container .gym-content .visit-project .live-demo2:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+#project-container .gym-content .visit-project .visit-project{
+    margin-left: 10px;
+}
+
+
+
+
+#project-container .project-cards .project3{
+    width: 200px;
+    height: 200px;
+    margin-top: 190px;
+    margin-left: 250px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: red;
+}
+#project-container .project-cards .project3 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#project-container .project-cards .project3 .zoom-in{
+    transition: transform 0.3s ease;
+}
+#project-container .project-cards .project3 .zoom-in:hover{
+    transform: scale(1.1);
+}
+#project-container .project-cards .weatherapi-content{
+    display: flex;
+    width: 400px;
+    align-items: flex-end;
+    margin-left: 700px;
+    margin-top: -179px;
+   
+}
+
+#project-container .project-cards .weatherapi-content p{
+    width: 700px;
+    word-spacing: 4px;
+    font-size: larger;
+    /* background-color: #000; */
+}
+
+#project-container .project-cards .weatherapi-content .visit{
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+#project-container .project-cards .weatherapi-content .visit a{
+    position: absolute;
+    margin-right: 440px;
+    margin-top: 20px;
+    padding: 16px;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    height: 48px;
+    width: 90px;
+}
+
+#project-container .project-cards .weatherapi-content .visit  .github{
+    margin-left: -200px;
+    width: 85px;
+    padding: 17px;
+}
+#project-container .project-cards .weatherapi-content .visit .github:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#project-container .project-cards .weatherapi-content .visit .live-demo{
+    padding: 15px;
+    margin-right: 300px;
+    height:47px;
+    width: 130px;
+}
+#project-container .project-cards .weatherapi-content .visit .live-demo:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+#project-container .project-cards .project4{
+    width: 200px;
+    height: 200px;
+    margin-top: 330px;
+    margin-left: 750px;
+    display:flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: gray;
+}
+#project-container .project-cards .project4 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#project-container .project-cards .project4 .zoom-in{
+    transition: transform 0.3s ease;
+}
+#project-container .project-cards .project4 .zoom-in:hover{
+    transform: scale(1.1);
+}
+
+#project-container  .todolist-content{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 250px;
+}
+
+#project-container .todolist-content p{
+    display: flex;
+    width: 400px;
+    align-items: flex-start;
+    margin-top: -300px;
+    margin-left: -50px;
+    word-spacing: 4px;
+    font-size: large;
+}
+
+
+#project-container .todolist-content .visit-project a{
+    position: absolute;
+    margin-right: 20px;
+    margin-top: -160px;
+    padding: 16px;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    height: 48px;
+    width: 90px;
+}
+
+#project-container .todolist-content .visit-project  .github2{
+    margin-left: -350px;
+}
+
+#project-container .todolist-content .visit-project .github2:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#project-container .todolist-content .visit-project .live-demo2{
+    padding: 17px;
+    width: 125px;
+    margin-left: -200px;
+}
+
+#project-container .todolist-content .visit-project .live-demo2:hover{
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* CONTACT SECTION */
+#contact-container{
+    height: 10vh;
+    margin-bottom: 20px;
+} 
+#contact-container .gmail{
+    display: flex;
+    margin-top: -120px;
+    width: 100px;
+    height: 100px;
+    
+}
+#contact-container .gmail img{
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+#contact-container .gmail a{
+    /* background-color: #000; */
+    text-decoration: none;
+    font-size: x-large;
+    padding: 5px;
+    color: #000;
+}
+/* FOOTER NAVBAR STYLES */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    background: #DAE2F8; 
+}
+.footer-card{
+   margin-top: auto;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   position: sticky;
+   height: 80px;
+   background-color: #000;
+}
+.icon-container{
+    display: flex;
+    justify-content: end;
+}
+.icon-container a {
+    margin-top: 30px;
+    margin-right: 90px;
+    
+}
+.icon-container a i{
+   color: #fff;
+   font-size: 30px;
+}
+.icon-container a i:hover{
+    color: blue;
+}
+.icon-container .github{
+    margin-top: 25px;
+    margin-right: -70px;
+}
+.icon-container .linkedin{
+    margin-top: 25px;
+}
+.icon-container .resume{
+    margin-top: 25px;
+    margin-left: -70px;
+}
+.icon-container p{
+    color:#fff;
+    margin-right: 500px;
+    padding: 30px;
+}
+
+/* MEDIA QUERY FOR NAVBAR COMPONENTS */
+@media screen and (max-width:480px) {
+    .icon-container{
+        display: block;
+    }
+    .icon-container a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; 
+    }
+    .footer-card{
+        height: 200px;
+    }
+    .icon-container a i{
+        font-size: 30px;
+    }
+}
